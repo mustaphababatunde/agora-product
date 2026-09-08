@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agora</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- stylsheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Header content -->
+        <div class="header-top">
+            <!-- header logo -->
+            <a href="#" class="logo">
+                <img src="/images/agora-removebg-preview (1).png" alt="Agora">
+            </a>
+
+            <!-- Search form -->
+            <form class="search">
+                <label for="search" class="visually-hidden">Search
+                        </label>
+                <input type="search" id="search" placeholder="Search for products">
+                <button type="submit">
+                        <i data-lucide="search"></i>
+                    </button>
+            </form>
+
+            <!--header Cta icons -->
+
+            <ul class="header-icons">
+                <li>
+                    <a href="#" aria-label="Wishlist">
+                        <i data-lucide="heart" aria-hidden="true"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" aria-label="Shopping bag">
+                        <i data-lucide="shopping-bag" aria-hidden="true"></i>
+                    </a>
+                </li>
+
+                <li class="user-icon">
+                    <i data-lucide="user" aria-hidden="true"></i>
+                    <ul class="user-menu">
+                        <li><a href="#">Sign In</a></li>
+                        <li><a href="#">Register</a></li>
+                        <li><a href="#">Account</a></li>
+                    </ul>
+                </li>
+                <!-- hamburger menu -->
+                <button class="menu-btn" type="button" aria-label="Open navigation menu" aria-controls="navbar" aria-expanded="false">
+                    <i data-lucide="menu" aria-hidden="true"></i>
+                </button>
+            </ul>
+
+
+
+        </div>
+
+        <!-- Navigation bar -->
+        <nav class="navbar" id="navbar">
+
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Fresh</a></li>
+                <li><a href="#">Grocery</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>
+                    Make healthy<br> life with
+                    <span>fresh</span><br> grocery
+                </h1>
+                <a href="#" class="hero-button">Shop Now</a>
+            </div>
+            <img class="hero-image" src="./images/vegtables 3.jpeg" alt="Fresh groceries">
+        </section>
+        <section class="categories">
+
+            <div class="section-heading">
+                <h2>Featured Categories</h2>
+                <a href="#">View All</a>
+            </div>
+
+            <div class="category-list">
+
+                <a href="#">
+                    <figure class="category">
+                        <img src="./images/fruits.jpeg" alt="Fresh fruits">
+                        <figcaption>Fresh Fruits</figcaption>
+                    </figure>
+                </a>
+
+                <a href="#">
+                    <figure class="category">
+                        <img src="./images/vegetables.jpeg" alt="Fresh vegetables">
+                        <figcaption>Fresh Vegetables</figcaption>
+                    </figure>
+                </a>
+
+                <a href="#">
+                    <figure class="category">
+                        <img src="./images/burger.jpeg" alt="Fresh meat">
+                        <figcaption>Fresh Meat</figcaption>
+                    </figure>
+                </a>
+
+                <a href="#">
+                    <figure class="category">
+                        <img src="./images/burger.jpeg" alt="Dairy products">
+                        <figcaption>Dairy</figcaption>
+                    </figure>
+                </a>
+
+                <a href="#">
+                    <figure class="category">
+                        <img src="./images/bakery.jpg" alt="Bakery products">
+                        <figcaption>Bakery</figcaption>
+                    </figure>
+                </a>
+
+            </div>
+
+
+        </section>
+
+        <section class="category-promotions">
+
+            <div class="category-cards">
+                <div class="category-card">
+                    <img src="./images/vegetables 2.jpeg" alt="Fresh vegetables">
+                    <div class="card-content">
+                        <span>Flat 20% Discount</span>
+                        <h3>Purely Fresh<br>Vegetables</h3>
+                        <button type="button" data-category="vegetables">
+                                Shop Now
+                                <i data-lucide="arrow-right"
+                                    aria-hidden="true"></i>
+                            </button>
+
+                    </div>
+                </div>
+
+                <div class="category-card">
+                    <img src="./images/fruits 2.jpeg" alt="Fresh fruits">
+
+                    <div class="card-content">
+                        <span>Flat 20% Discount</span>
+                        <h3>Fresh Fruits,<br>Pure Quality</h3>
+                        <button type="button" data-category="fruits">
+                                Shop Now
+                                <i data-lucide="arrow-right"
+                                    aria-hidden="true"></i>
+                            </button>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <section class="products">
+            <p class="section-label">Products</p>
+            <h2>Featured Products</h2>
+            <div class="product-list">
+                <div class="product-card">
+                    <img src alt="Fresh product">
+                    <h3>Fresh 1000g</h3>
+                    <p>$ 5.99</p>
+                    <a href="#">Add to Cart</a>
+                </div>
+
+                <div class="product-card">
+                    <img src alt="Tomato">
+                    <h3>Tomato 1kg</h3>
+                    <p>$ 3.99</p>
+                    <a href="#">Add to Cart</a>
+                </div>
+
+                <div class="product-card">
+                    <img src alt="Fresh oil">
+                    <h3>Sunlight Oil</h3>
+                    <p>$ 4.99</p>
+                    <a href="#">Add to Cart</a>
+                </div>
+
+                <div class="product-card">
+                    <img src alt="Milk">
+                    <h3>Fresh Milk</h3>
+                    <p>$ 2.99</p>
+                    <a href="#">Add to Cart</a>
+                </div>
+
+                <div class="product-card">
+                    <img src alt="Honey">
+                    <h3>Natural Honey</h3>
+                    <p>$ 9.99</p>
+                    <a href="#">Add to Cart</a>
+                </div>
+
+                <div class="product-card">
+                    <img src alt="Yogurt">
+                    <h3>Yogurt</h3>
+                    <p>$ 2.99</p>
+                    <a href="#">Add to Cart</a>
+                </div>
+
+                <div class="product-card">
+                    <img src alt="Noodles">
+                    <h3>Millet Noodles</h3>
+                    <p>$ 3.99</p>
+                    <a href="#">Add to Cart</a>
+                </div>
+
+                <div class="product-card">
+                    <img src alt="Instant noodles">
+                    <h3>Instant Noodles</h3>
+                    <p>$ 2.99</p>
+                    <a href="#">Add to Cart</a>
+                </div>
+
+            </div>
+
+            <a href="#" class="view-more">View More</a>
+
+        </section>
+
+    </main>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+
+</body>
+
+</html>

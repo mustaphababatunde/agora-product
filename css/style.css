@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+:root {
+    --primary-color: rgb(31, 131, 94);
+    --secondary-color: rgb(148, 187, 89);
+    --accent-color: rgb(26, 26, 26);
+    --secondary-hg-color: rgb(244, 242, 233);
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline: 2rem;
+    height: 10vh;
+    justify-content: center;
+}
+
+.search,
+.navbar,
+.user-menu {
+    display: none;
+}
+
+.logo img {
+    width: 8.1rem;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.header-icons a {
+    color: var(--accent-color);
+    font-size: 18px;
+}
+
+.menu-btn {
+    display: block;
+    font-size: 22px;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem;
+    border-radius: 15px;
+}
+
+.hero-content h1 span {
+    color: var(--primary-color);
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-image {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.hero-content a {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: var(--primary-color);
+    color: var(--secondary-hg-color);
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.categories {
+    padding: 50px 5%;
+}
+
+.categories h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.category-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.category {
+    text-align: center;
+}
+
+.category img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 10px;
+    border-radius: 10px;
+}
+
+.category figcaption {
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.category-promotions {
+    padding: 50px 5%;
+}
+
+.category-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.category-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.category-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 35px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    height: 100%;
+}
+
+.card-content span {
+    font-size: 10px;
+    margin-bottom: 8px;
+}
+
+.card-content h3 {
+    font-size: 24px;
+    line-height: 1.05;
+    margin-bottom: 22px;
+}
+
+.card-content button {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.card-content button i {
+    width: 11px;
+    height: 11px;
+}
