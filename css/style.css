@@ -4,8 +4,18 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-color: rgb(31, 131, 94);
+    --secondary-color: rgb(148, 187, 89);
+    --accent-color: rgb(26, 26, 26);
+    --secondary-hg-color: rgb(244, 242, 233);
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
 }
 
 ul {
@@ -28,18 +38,25 @@ button {
     cursor: pointer;
 }
 
-:root {
-    --primary-color: rgb(31, 131, 94);
-    --secondary-color: rgb(148, 187, 89);
-    --accent-color: rgb(26, 26, 26);
-    --secondary-hg-color: rgb(244, 242, 233);
+.route-link {
+    padding: 12px 25px;
+    background-color: var(--primary-color);
+    color: var(--secondary-hg-color);
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+    font-size: 15px;
+    font-weight: 600;
 }
 
-body {
-    font-family: "Roboto", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
+.btn {
+    padding: 10px 20px;
+    background-color: var(--secondary-color);
+    color: var(--accent-color);
+    border: none;
+    border-radius: 15px;
+    font-size: 15px;
+    font-weight: 600;
+    width: 100%;
 }
 
 header {
@@ -70,7 +87,7 @@ header {
 .header-icons {
     display: flex;
     align-items: center;
-    gap: clamp(6px, 2vw, 10px);
+    gap: clamp(10px, 2vw, 14px);
 }
 
 .header-icons a {
@@ -161,12 +178,6 @@ header {
     display: block;
     width: fit-content;
     margin: 35px auto 0;
-    padding: 12px 24px;
-    background-color: var(--primary-color);
-    color: white;
-    border-radius: 25px;
-    font-size: 14px;
-    font-weight: 600;
     text-align: center;
 }
 
@@ -206,8 +217,12 @@ header {
 }
 
 .card-content span {
-    font-size: 10px;
+    padding: 5px 15px;
+    font-size: 13px;
     margin-bottom: 8px;
+    background-color: var(--secondary-hg-color);
+    color: var(--accent-color);
+    border-radius: 30px;
 }
 
 .card-content h3 {
@@ -216,15 +231,10 @@ header {
     margin-bottom: 22px;
 }
 
-.shop-now {
+.card-content a {
     display: inline-flex;
     align-items: center;
     gap: 5px;
-    padding: 6px 12px;
-    border-radius: 20px;
-    background-color: var(--primary-color);
-    color: white;
-    font-size: 10px;
 }
 
 .shop-now i {
@@ -285,13 +295,6 @@ header {
 
 .product-card button {
     display: inline-block;
-    padding: 10px 20px;
-    background-color: var(--primary-color);
-    color: white;
-    border: none;
-    border-radius: 25px;
-    font-size: 13px;
-    font-weight: 600;
 }
 
 
@@ -301,10 +304,6 @@ header {
     display: block;
     width: fit-content;
     margin: 35px auto 0;
-    padding: 12px 24px;
-    background-color: var(--primary-color);
-    color: white;
-    border-radius: 25px;
     font-size: 14px;
     font-weight: 600;
     text-align: center;
@@ -366,11 +365,4 @@ header {
 
 .deals-section .product-card button {
     display: inline-block;
-    padding: 10px 20px;
-    background-color: var(--primary-color);
-    color: white;
-    border: none;
-    border-radius: 25px;
-    font-size: 13px;
-    font-weight: 600;
 }
